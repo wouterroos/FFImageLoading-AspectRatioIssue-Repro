@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="App3.DetailPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms">
+    <Grid>
+        <ScrollView IsVisible="{Binding HasData}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="260" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <forms:CachedImage Aspect="AspectFill"
+                                   LoadingPlaceholder="https://www.nycgovparks.org/photo_gallery/full_size/14413.jpg"
+                                   Source="http://www.cooperindustries.com/content/dam/public/safety/notification/products/Mass%20Notification%20Systems/Spotlight/MNS_WideArea_Spotlight3.jpg" />
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>
